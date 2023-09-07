@@ -1,0 +1,235 @@
+const products = [
+    {
+        name: "Light Walkers",
+        color:"Classsic Grey",
+        image: "/Assest/shoes/ND-LightWalkers-ClassicGrey.jpg",
+        categoryType:[ "COTTON","SANDALS"],
+        description:"A walking shoe that does more than cover your steps for the day, meet our latest Light Walkers designed keeping your movement as well as leisure in mind. ",
+        price: 1209,
+        countInStock: 3,
+        rating: 2.5,
+        categoryType:["COTTON","CLASSIC","SNEAKERS"],
+        numReviews: 12
+    },
+    {
+        name: "Cotton Slip Ons",
+        color:"Classsic Green",
+        image: "/Assest/shoes/ND-CottonSlipOns-SageGreen.jpg",
+        categoryType:[ "COTTON","SANDALS"],
+        description:"Designed as much for the busy bee as the leisure-loving person, the Cotton Slip Ons maximize comfort in a minimal style. Crafted from natural materials, this lightweight yet durable slip-on offers easy on and off. Super versatile and easy to style, this is the perfect companion for all casual lifestyle needs. ",
+        price: 1999,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 8
+    },
+    {
+        name: "Casual Trainers",
+        color:"Classsic Grey",
+        categoryType:[ "COTTON","SANDALS"],
+        image: "/Assest/shoes/ND-CasualTrainers-ClassicGrey-_WebOptimized_a.jpg",
+        description:"Introducing Casual Trainers, our rendition of sneakers that do more than just make you look good. With a lightweight build, memory foam insole, and slip-resistant soles, these shoes provide comfort for someone looking to adopt an active lifestyle.",
+        price: 1749,
+        countInStock: 3,
+        rating: 3,
+        numReviews: 5
+    },
+    {
+        name: "ReLive Knit Loafers",
+        color:"Classsic Brown",
+        image: "/Assest/shoes/ND-ReLiveKnitLoafer-ExtraHoney.jpg",
+        categoryType:[ "COTTON","SANDALS"],
+        description:"Our latest style, the ReLive Knit Loafers, is a comfortable and versatile pair that is crafted to travel everywhere with you. Be it office meetings or family gatherings or parties or vacation, our Knit Loafers is the only shoe you’ll need!",
+        price: 8900,
+        countInStock: 3,
+        rating: 4,
+        numReviews: 20
+    },
+    {
+        name: "Cork Sandals",
+        color:"Solid Black",
+        categoryType:[ "COTTON","SANDALS"],
+        image: "/Assest/shoes/ND-CorkSandals-SolidBlack.jpg",
+        description:"Inspired by the long hours you spend on your feet every day, we give you the Cork Sandals, a comfortable design in fashionable colorways to complement your everyday adventures.",
+        price: 1799,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "Cotton Classic Sneakers",
+        color:"Ivory Cream",
+        categoryType:["COTTON","CLASSIC","SNEAKERS"],
+        image: "/Assest/shoes/ND-CottonClassics-BeigeBG-IvoryCream_WebOptimized_a_1000x6.jpg",
+        description:"Evergreen style, paired with new age colors = Anywhere, Anytime usage. Classics guarantee comfort, style, versatility and sustainable fashion.Ideal for: Men and Women",
+        price: 1499,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "Cotton Classic Sneakers",
+        color:"Coal Black Black Sole",
+        categoryType:["COTTON","CLASSIC","SNEAKERS"],
+        image: "/Assest/shoes/ND-CorkSandals-SolidBlack.jpg",
+        description:"Evergreen style, paired with new age colors = Anywhere, Anytime usage. Classics guarantee comfort, style, versatility and sustainable fashion.Ideal for: Men and Women",
+        price: 1499,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "Cotton Classic Sneakers",
+        color:"Pebble Grey",
+        categoryType:["COTTON","CLASSIC","SNEAKERS"],
+        image: "/Assest/shoes/ND-CottonClassics-BeigeBG-PebbleGrey_WebOptimized_a_1000x8.jpg",
+        description:"Evergreen style, paired with new age colors = Anywhere, Anytime usage. Classics guarantee comfort, style, versatility and sustainable fashion.Ideal for: Men and Women",
+        price: 1499,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "Cotton Classic Sneakers",
+        color:" Veri Peri",
+        categoryType:["COTTON","CLASSIC","SNEAKERS"],
+        image: "/Assest/shoes/ND-CottonClassics-BeigeBG-VeriPeri_WebOptimized_a_1000x9.jpg",
+        description:"Evergreen style, paired with new age colors = Anywhere, Anytime usage. Classics guarantee comfort, style, versatility and sustainable fashion.",
+        price: 1299,
+        countInStock: 3,
+        rating: 4.5,
+        numReviews: 3
+    },
+    {
+        name: "Cotton Classic Sneakers",
+        color:"Sage Green",
+        categoryType:["COTTON","CLASSIC","SNEAKERS"],
+        image: "/Assest/shoes/ND-CottonClassics-BeigeBG-SageGreen_WebOptimized_b_1000x10.jpg",
+        description:"Evergreen style, paired with new age colors = Anywhere, Anytime usage. Classics guarantee comfort, style, versatility and sustainable fashion.Ideal for: Men and Women",
+        price: 1499,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "Cotton Classic Sneakers",
+        color:"Midnight Blue",
+        categoryType:["COTTON","CLASSIC","SNEAKERS"],
+        image: "/Assest/shoes/ND-CottonClassics-BeigeBG-MidnightBlue_WebOptimized_a_1000x11.jpg",
+        description:"Evergreen style, paired with new age colors Anywhere, Anytime usage. Classics guarantee comfort, style, versatility and sustainable fashion.Ideal for: Men and Women",
+        price: 1499,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {        
+        name: "Everyday Basic Slip Ons",
+        color:"Striking Lava",
+        categoryType:["Everyday","Basic"],
+        image: "/Assest/shoes/ND-EBSlipOn-CitrusOlive-_WebOptimized_a_1000x.jpg",
+        description:"Step into your day with our Everyday Basic Slip On, a no-fuss everyday wear shoe designed for those who are always on the move. The Everyday Basic Slip Ons make an effortless impact while also delivering reliable comfort & performance for your daily activities",
+        price: 1599,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "Everyday Basic Slip Ons",
+        color:"NeonGray",
+        categoryType:["Everyday","Basic"],
+        image: "/Assest/shoes/ND-EBSlipOn-NeonGray-_WebOptimized_c_1000x.jpg",
+        description:"Step into your day with our Everyday Basic Slip On, a no-fuss everyday wear shoe designed for those who are always on the move. The Everyday Basic Slip Ons make an effortless impact while also delivering reliable comfort & performance for your daily activities",
+        price: 1599,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "Everyday Basic Slip Ons",
+        color:"NeonNavy",
+        categoryType:["Everyday","Basic"],
+        image: "/Assest/shoes/ND-EBSlipOn-NeonNavy-_WebOptimized_a_1000x.jpg",
+        description:"Step into your day with our Everyday Basic Slip On, a no-fuss everyday wear shoe designed for those who are always on the move. The Everyday Basic Slip Ons make an effortless impact while also delivering reliable comfort & performance for your daily activities",
+        price: 1599,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {   
+        name: "Everyday Basic Slip Ons",
+        color:"Black",
+        categoryType:["Everyday","Basic"],
+        image: "/Assest/shoes/ND-EBSlipOn-StrikingLava-_WebOptimized_a_1000x.jpg",
+        description:"Step into your day with our Everyday Basic Slip On, a no-fuss everyday wear shoe designed for those who are always on the move. The Everyday Basic Slip Ons make an effortless impact while also delivering reliable comfort & performance for your daily activities",
+        price: 1599,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "All-Season Slip Ons",
+        color:"GreyMist",
+        categoryType:["Season","Basic"],
+        image: "/Assest/shoes/ND-WoolSlipOn-GreyMist_WebOptimized_a_1000x.jpg",
+        description:"Give your time of leisure the update of our very latest, the All-Season Slip Ons, crafted from temperature-regulating Merino Wool fabric to keep your feet warm during winter and cool during summer. Designed for ‘easy slip on and to go’, the Wool Slip Ons take your footwear style game a notch higher.",
+        price: 2192,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "Sole Max Slip Ons",
+        color:"Black",
+        categoryType:["Season","Basic"],
+        image: "/Assest/shoes/ND-SoleMaxSlipOn-UltraBeige-_WebOptimized_a_1000x.jpg",
+        description:"Give your time of leisure the update of our very latest, the All-Season Slip Ons, crafted from temperature-regulating Merino Wool fabric to keep your feet warm during winter and cool during summer. Designed for ‘easy slip on and to go’, the Wool Slip Ons take your footwear style game a notch higher.",
+        price: 2192,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "Sole Max Slip Ons",
+        color:"UltraBlack",
+        categoryType:["Season","Basic"],
+        image: "/Assest/shoes/ND-SoleMaxSlipOn-UltraBlack-_WebOptimized_a_1000x.jpg",
+        description:"Give your time of leisure the update of our very latest, the All-Season Slip Ons, crafted from temperature-regulating Merino Wool fabric to keep your feet warm during winter and cool during summer. Designed for ‘easy slip on and to go’, the Wool Slip Ons take your footwear style game a notch higher.",
+        price: 2192,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "Sole Max Slip Ons",
+        color:"UltraGreen",
+        categoryType:["Season","Basic"],
+        image: "/Assest/shoes/ND-SoleMaxSlipOn-UltraGreen-_WebOptimized_a_1000x.jpg",
+        description:"Give your time of leisure the update of our very latest, the All-Season Slip Ons, crafted from temperature-regulating Merino Wool fabric to keep your feet warm during winter and cool during summer. Designed for ‘easy slip on and to go’, the Wool Slip Ons take your footwear style game a notch higher.",
+        price: 2192,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "Sole Max Slip Ons",
+        color:"UltraGrey",
+        categoryType:["Season","Basic"],
+        image: "/Assest/shoes/ND-SoleMaxSlipOn-UltraGrey-_WebOptimized_a_1000x.jpg",
+        description:"Give your time of leisure the update of our very latest, the All-Season Slip Ons, crafted from temperature-regulating Merino Wool fabric to keep your feet warm during winter and cool during summer. Designed for ‘easy slip on and to go’, the Wool Slip Ons take your footwear style game a notch higher.",
+        price: 2192,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    },
+    {
+        name: "Sole Max Slip Ons",
+        color:"GreyMist",
+        categoryType:["Season","Basic"],
+        image: "/Assest/shoes/ND-WoolSlipOn-GreyMist_WebOptimized_a_1000x.jpg",
+        description:"Give your time of leisure the update of our very latest, the All-Season Slip Ons, crafted from temperature-regulating Merino Wool fabric to keep your feet warm during winter and cool during summer. Designed for ‘easy slip on and to go’, the Wool Slip Ons take your footwear style game a notch higher.",
+        price: 2192,
+        countInStock: 3,
+        rating: 2,
+        numReviews: 3
+    }
+]
+module.exports=products;  

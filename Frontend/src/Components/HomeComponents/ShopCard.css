@@ -1,0 +1,57 @@
+.card {
+    
+    width: auto;
+    
+}
+.imgbox
+{
+    overflow: hidden;
+}
+.imgbox img
+{
+    transition: all 1.5s ease-out;
+}
+
+.imgbox img:hover{
+    transform: scale(+1.5);
+}
+
+.card-text {
+    height: 120px;
+    overflow: hidden;
+}
+.card-title
+{
+    
+}
+
+@media only screen and (max-width: 1410px) {
+    
+}
+
+@media only screen and (max-width: 1210px) {
+   
+}
+
+@media only screen and (width: 800px) {
+   .card{
+    width: 80%;
+   }
+   /*  */
+}
+
+
+
+
+.card {
+    /* width: 200px;
+    height: 200px; */
+    border: 1px solid #ccc;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  

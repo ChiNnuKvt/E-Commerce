@@ -1,0 +1,16 @@
+
+  .singleimage
+  {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .singleimage img{
+    transition: transform 1s ease;
+  }
+
+  .singleimage img:hover
+  {
+    transform: scale(1.5);
+    transform-origin: center;
+  }

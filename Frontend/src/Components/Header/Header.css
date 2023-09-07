@@ -1,0 +1,27 @@
+.form-control:focus
+{
+    box-sizing: none;
+    border-color: inherit;
+}
+
+
+
+.header-top-strip
+{
+    /* border-bottom: ; */
+    border-bottom:2px solid var(--color-3b4149);
+    background-color:var(--color-131921);
+}
+
+.header-upper
+{
+    background-color: var(--color-131921);
+    /* height: 60px; */
+}
+
+.header-upper .input-group-text
+{
+    background-color: var(--color-febd69);
+    
+}
+
